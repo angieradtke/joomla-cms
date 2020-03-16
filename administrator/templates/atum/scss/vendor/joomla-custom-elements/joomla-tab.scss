@@ -53,7 +53,6 @@ joomla-tab {
 
       &[active],
       &:hover {
-        margin: -1px;
         background-color: $white;
         background-image: none;
         border: 1px solid var(--bluegray);
@@ -191,6 +190,7 @@ joomla-tab {
     }
 
     a[role=tab] {
+      background-color: var(--atum-link-color);
       color: var(--atum-text-light);
       border: 1px solid var(--atum-text-light);
       border-top: 0;
@@ -200,6 +200,10 @@ joomla-tab {
       &:focus {
         color: var(--atum-text-light);
         background-color: var(--atum-bg-dark);
+      }
+
+      .text-muted {
+        color: var(--atum-text-light) !important;
       }
     }
 
